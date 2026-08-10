@@ -1,17 +1,42 @@
-# Hypothesis & Success Metrics
+# Hypothesis & Success Metrics (Module 3)
 
-> Module 3 · Use Analytics and Metrics for Data-Driven Decisions — ★ Deliverable 3
->
-> _You'll complete this during Module 3._
+## Pre-work · Hypothesis check
+- **Role , who you are solving for (from M2):** Quality-focused streaming subscribers who want to find a great movie or show quickly but become frustrated when a large catalog makes discovery feel overwhelming and time-consuming.
+- **Goal , what this user is ultimately trying to achieve:** Find a great movie or show to watch in minutes so they can spend their limited leisure time enjoying content instead of searching through an overwhelming catalog.
+- **Friction / moment of misery , the specific pain blocking their goal:** After a long day, the user spends 15-20 minutes scrolling through thousands of options without confidence in any choice and ultimately leaves StreamLine because finding something worth watching requires too much effort.
+- **Current workaround , the external tool or manual process they rely on (M2):** Users leave StreamLine and use Google searches, IMDb, Rotten Tomatoes, Letterboxd, friends' recommendations, social media, or competitor streaming services to decide what to watch.
+- **Problem Hook , your one-sentence framing of the business crisis (M1):** As StreamLine's massive catalog creates decision fatigue instead of value, quality-focused viewers are abandoning the platform because finding something worth watching requires too much effort.
+- **Value Proposition , the outcome your initiative promised to deliver (M1):** StreamLine Spotlight transforms StreamLine from a content warehouse into a trusted entertainment guide by delivering curated collections and recommendations that help viewers discover high-quality content faster. This is urgent because engagement has stalled while competitors are winning through stronger discovery experiences.
 
-## Finalized product hypothesis
+## Read your data snapshots
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** Copilot said:
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
+The funnel data mostly confirms my M2 friction point. Users are entering StreamLine and browsing content (71% browse titles, 48% view title details), but only 29% start playing and just 11% reach a 30+ minute session. This aligns with the qualitative finding that users spend significant time searching but struggle to confidently choose something to watch.
 
-## Success metrics
+The data also adds nuance. The problem is not awareness or traffic at the top of the funnel. The bigger issue is engagement depth. Users are browsing, but too few are converting into meaningful viewing sessions. This suggests StreamLine is failing to turn discovery intent into sustained engagement, which supports the business risk identified in Module 1.
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** Yes, the retention patterns align with my M2 persona’s workaround. Users were leaving StreamLine to rely on Google, review sites, friends, and competitors because finding something worth watching in the full library felt overwhelming. The stronger Month 1 retention in Spotlight cohorts suggests that curated discovery helps reduce this frustration.
 
-| Metric | Type | Target | Why it matters |
-|---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+The large Month 0 → Month 1 drop across all cohorts indicates that the first experience is still the biggest challenge. Many users are not finding enough value or confidence during onboarding to return. This matches my persona’s frustration of spending too much time searching before finding something worth watching.
+
+Overall, the data supports my discovery hypothesis: users who receive better guidance through Spotlight are more likely to stay engaged, but improving the first-time discovery experience remains the biggest retention opportunity.
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** The LTV gap and content mix confirm my persona’s moment of misery. My persona maps most closely to the Wanderers segment because they are low-engagement users who likely browse without confidence and rely on visible or trending content instead of finding something personally compelling.
+
+Wanderers are 41% of the base, but they have the lowest LTV at $8.40 and only 1.1 sessions per week. Their content mix is also 61% trending, which suggests they are not successfully discovering curated content. This aligns with the qualitative pain: users feel overwhelmed by the full library and fall back on whatever is easiest to find.
+
+The data confirms their pain because Wanderers show the biggest improvement when exposed to Spotlight, with a 22-point churn reduction versus non-exposed users. This suggests Spotlight is most valuable for the users who struggle most with discovery.
+
+I would target Wanderers, not Power Users, because they are the largest, most under-engaged segment and show the biggest business upside from Spotlight.
+- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** _(not filled in)_
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** _(not filled in)_
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** _(not filled in)_
+
+## Step 3 · Craft your hypothesis
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** “I open the app, scroll for like twenty minutes, and close it without watching anything. There's 15,000 titles but nothing I actually want.” This reflects the core frustration of choice overload and low confidence in content discovery.
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** Only 11% of visitors reach a 30+ minute session, down from 19% six months ago. Wanderers, the largest segment (41% of users), have the lowest LTV ($8.40), only 1.1 sessions/week, and show a 22-point churn improvement when exposed to Spotlight.
+- **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** Quality-focused streaming subscribers who want to quickly find something great to watch but become frustrated when a large catalog makes discovery overwhelming and time-consuming.
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Users struggle to confidently choose content from StreamLine's large catalog, leading to excessive browsing, abandoned sessions, and reliance on external recommendation sources.
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Increase confident content selection and viewing engagement, resulting in higher retention, lower churn, and improved LTV among discovery-focused users, especially Wanderers.
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Increase the percentage of users reaching a 30+ minute viewing session and improve Month 1 retention for users exposed to Spotlight.
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Overall DAU and average session length must not decline while promoting Spotlight.
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** Evaluate after one retention cycle (30-60 days). Scale if Month 1 retention improves by at least 10 points and 30+ minute session rates increase meaningfully versus non-exposed users. Pivot or stop if engagement and retention remain unchanged.
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Based on qualitative research showing users “scroll for like twenty minutes and close the app without watching anything,” and quantitative evidence that only 11% of visitors reach a 30+ minute session while Wanderers (41% of users) show a 22-point churn improvement when exposed to Spotlight, I believe that solving content discovery and decision fatigue for quality-focused Wanderers will result in higher engagement, improved retention, and lower churn, as measured by a 10+ point increase in Month 1 retention and an increase in 30+ minute viewing sessions. I will protect overall DAU and average session length and will make a go/no-go decision after 30-60 days of retention and engagement data.
